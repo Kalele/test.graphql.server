@@ -1,0 +1,21 @@
+type Query {
+  getSwap: Swap
+  getPerson: Person
+  getPersonByPage(page: Int): Swap
+  getPersonByName(name: String): Swap
+}
+
+type Person {
+  name: String
+  height: String
+  mass: String
+  gender: String
+  homeworld: String
+}
+
+type Swap {
+  count: String
+  next: String
+  previous: String
+  results: [Person]
+}
